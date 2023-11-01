@@ -32,6 +32,9 @@ body {
     .right {
       .menu {
         display: none;
+        .btn {
+          margin-left: 2rem;
+        }
       }
 
       .hamburger__container {
@@ -177,10 +180,11 @@ body {
       .right {
         h3 {
           font-size: 3rem;
+          padding: 0.5rem;
         }
         .desc {
           max-width: 700px;
-          padding: 1rem 0;
+          padding: 1rem 0.5rem;
           p.typewriter_container {
             font-size: 1.5rem;
           }
@@ -224,6 +228,34 @@ body {
         font-size: 2rem;
       }
 
+      .left {
+        .skill_list {
+          ul {
+            display: flex;
+            flex-direction: column;
+            min-height: 300px;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            gap: 1rem;
+
+            li {
+              background-color: $grey;
+              padding: 0.5rem;
+              border-radius: 10px;
+              color: $darker;
+              min-width: 300px;
+              text-align: center;
+            }
+          }
+
+          .btn_container {
+            text-align: center;
+          }
+        }
+      }
+
       .right {
         .title {
           max-width: 600px;
@@ -233,6 +265,7 @@ body {
           max-width: 600px;
           margin: 0 auto;
           text-align: center;
+          padding: 1rem;
 
           .desc-item {
             padding: 1rem 0;
@@ -332,13 +365,13 @@ body {
             img {
               width: 200px;
               height: 200px;
-              object-fit: contain;
+              object-fit: cover;
             }
           }
         }
 
         .marquee2 {
-          animation-delay: 16s;
+          animation-delay: 15s;
           // padding: 1rem;
         }
 
