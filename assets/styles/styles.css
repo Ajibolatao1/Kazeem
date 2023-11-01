@@ -253,7 +253,7 @@ body .main .section2 .right .title {
   margin: 0 auto;
 }
 body .main .section2 .right .desc {
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
