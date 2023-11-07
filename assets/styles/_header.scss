@@ -1,0 +1,157 @@
+@mixin header() {
+  //   body
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+  background-color: $dark;
+  color: $grey;
+  width: 100vw;
+  overflow-x: hidden;
+
+  //   header
+  .header {
+    background-color: $dark;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 1rem;
+
+    .logo_container {
+      .logo {
+        width: 80px;
+      }
+    }
+
+    .right {
+      .menu {
+        display: none;
+        .btn {
+          margin-left: 2rem;
+        }
+      }
+
+      .hamburger__container {
+        .hamburger {
+          font-size: 2rem;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+          // color: $pri-color;
+          font-weight: 700;
+
+          &:hover {
+            font-size: 3rem;
+            margin-right: -0.5rem;
+          }
+        }
+      }
+    }
+
+    //  header tablet
+    @include tablet {
+      padding: 1rem 4rem !important;
+      .right {
+        .menu {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          gap: 1rem;
+
+          li {
+            a {
+              text-decoration: none;
+              color: whitesmoke;
+              transition: all 0.5s ease-in-out;
+
+              // &:hover {
+              // }
+            }
+          }
+        }
+        .hamburger {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // sidebar
+  .sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: 0;
+    background-color: $dark;
+
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    color: whitesmoke;
+
+    .top {
+      height: 130px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .bi {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        // color: $pri-color;
+        font-weight: 700;
+        padding-right: 1rem;
+
+        &:hover {
+          font-size: 3rem;
+          margin-right: -0.5rem;
+        }
+      }
+    }
+
+    .bottom {
+      justify-self: center;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.5rem;
+        width: 100%;
+
+        li {
+          a {
+            width: 100%;
+            display: block;
+            text-decoration: none;
+            color: whitesmoke;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+              padding-left: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Footer
+  .footer {
+    text-align: center;
+    font-size: 1.2rem;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

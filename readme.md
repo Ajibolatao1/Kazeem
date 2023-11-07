@@ -20,8 +20,6 @@ Overall, I am a results-driven digital marketing specialist with a proven track 
 
 
 
-about me
-My skills
 What I Do(My competency): Digital Strategy, Social Media Marketing, E-commerce, PPC Advertising, and Social Media Management
 My Skill Stack: Semrush, Ubbersuggest, Google Analytics, Google Tag Manager, Google Search console, Wix, Wordpress, Moz, Yoast, Canva and Facebook Ads Manager
 SEO
