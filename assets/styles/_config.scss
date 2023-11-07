@@ -63,7 +63,7 @@ $primary-color: rgb(108, 136, 208);
   color: $darker;
   margin: 1rem 0;
   font-size: 0.85rem;
-  box-shadow: .2px .2px 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0.2px 0.2px 3px 3px rgba(0, 0, 0, 0.2);
 
   &:hover {
     transform: scale(1.05);
@@ -72,6 +72,10 @@ $primary-color: rgb(108, 136, 208);
 
 .active {
   color: $primary-color !important;
+}
+
+.hide {
+  display: none;
 }
 
 // media queries
